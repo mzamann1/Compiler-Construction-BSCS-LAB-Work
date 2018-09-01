@@ -1,0 +1,7 @@
+E:\UNI WORK\6th Semester\Compiler Construction\LAB2\LAB2\bin\Debug\LAB2.exe.config
+E:\UNI WORK\6th Semester\Compiler Construction\LAB2\LAB2\bin\Debug\LAB2.exe
+E:\UNI WORK\6th Semester\Compiler Construction\LAB2\LAB2\bin\Debug\LAB2.pdb
+E:\UNI WORK\6th Semester\Compiler Construction\LAB2\LAB2\obj\Debug\LAB2.csprojAssemblyReference.cache
+E:\UNI WORK\6th Semester\Compiler Construction\LAB2\LAB2\obj\Debug\LAB2.csproj.CoreCompileInputs.cache
+E:\UNI WORK\6th Semester\Compiler Construction\LAB2\LAB2\obj\Debug\LAB2.exe
+E:\UNI WORK\6th Semester\Compiler Construction\LAB2\LAB2\obj\Debug\LAB2.pdb
