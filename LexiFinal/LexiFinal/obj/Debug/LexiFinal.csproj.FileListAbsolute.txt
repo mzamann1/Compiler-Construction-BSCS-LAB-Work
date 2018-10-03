@@ -1,0 +1,7 @@
+C:\Users\Zaman\Documents\Visual Studio 2017\Projects\LexiFinal\LexiFinal\bin\Debug\LexiFinal.exe.config
+C:\Users\Zaman\Documents\Visual Studio 2017\Projects\LexiFinal\LexiFinal\bin\Debug\LexiFinal.exe
+C:\Users\Zaman\Documents\Visual Studio 2017\Projects\LexiFinal\LexiFinal\bin\Debug\LexiFinal.pdb
+C:\Users\Zaman\Documents\Visual Studio 2017\Projects\LexiFinal\LexiFinal\obj\Debug\LexiFinal.csprojAssemblyReference.cache
+C:\Users\Zaman\Documents\Visual Studio 2017\Projects\LexiFinal\LexiFinal\obj\Debug\LexiFinal.csproj.CoreCompileInputs.cache
+C:\Users\Zaman\Documents\Visual Studio 2017\Projects\LexiFinal\LexiFinal\obj\Debug\LexiFinal.exe
+C:\Users\Zaman\Documents\Visual Studio 2017\Projects\LexiFinal\LexiFinal\obj\Debug\LexiFinal.pdb
