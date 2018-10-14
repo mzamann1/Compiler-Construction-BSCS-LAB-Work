@@ -5,3 +5,10 @@ C:\Users\Zaman\Documents\Visual Studio 2017\Projects\LexiFinal\LexiFinal\obj\Deb
 C:\Users\Zaman\Documents\Visual Studio 2017\Projects\LexiFinal\LexiFinal\obj\Debug\LexiFinal.csproj.CoreCompileInputs.cache
 C:\Users\Zaman\Documents\Visual Studio 2017\Projects\LexiFinal\LexiFinal\obj\Debug\LexiFinal.exe
 C:\Users\Zaman\Documents\Visual Studio 2017\Projects\LexiFinal\LexiFinal\obj\Debug\LexiFinal.pdb
+E:\UNI WORK\6th Semester\Compiler Construction\LexiFinal\LexiFinal\bin\Debug\LexiFinal.exe.config
+E:\UNI WORK\6th Semester\Compiler Construction\LexiFinal\LexiFinal\bin\Debug\LexiFinal.exe
+E:\UNI WORK\6th Semester\Compiler Construction\LexiFinal\LexiFinal\bin\Debug\LexiFinal.pdb
+E:\UNI WORK\6th Semester\Compiler Construction\LexiFinal\LexiFinal\obj\Debug\LexiFinal.csprojAssemblyReference.cache
+E:\UNI WORK\6th Semester\Compiler Construction\LexiFinal\LexiFinal\obj\Debug\LexiFinal.csproj.CoreCompileInputs.cache
+E:\UNI WORK\6th Semester\Compiler Construction\LexiFinal\LexiFinal\obj\Debug\LexiFinal.exe
+E:\UNI WORK\6th Semester\Compiler Construction\LexiFinal\LexiFinal\obj\Debug\LexiFinal.pdb
