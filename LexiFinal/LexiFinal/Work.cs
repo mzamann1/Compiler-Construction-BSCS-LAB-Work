@@ -9,10 +9,13 @@ namespace LexiFinal
     class Work
     {
         int value_cntr=0, op_cntr=0, punc_cntr=0;
+        public string[] keywords_list = new string[] { "default", "is", "new", "break" };
+        public string[,] op_list = new string[,] { { "+", "Operator : Add" }, { "-", "Operator : Minus" }, {"=","assignment Operator" }, { "/", "Operator : Division" }, { "%", "Operator : Modulus" } };
+        public string[,] puncOp_list = new string[,] { { "(", "Open Small Parenthesis" }, { ")", "Closed Small Parenthesis" }, { "{", "Open Curly Braces" }, { "}", "Closed Curly Braces" }, { ";", "Delimeter" }, { ",", "comma" } };
 
         public Tuple<bool,string> isKeyword(string input)
         {
-            string[] keywords_list = new string[] { "default", "is", "new", "break" };
+           
             bool flag = false;
           //  int pos = 0;
             for (int i = 0; i < keywords_list.Length; i++)
@@ -26,7 +29,7 @@ namespace LexiFinal
                
             }
 
-            return flag ? Tuple.Create(true, string.Format("< " + " keyword  , {0}  > ",input)) : Tuple.Create(false, "");
+            return flag ? Tuple.Create(true, string.Format(" keyword  ,{0} ",input)) : Tuple.Create(false, "");
 
 
         }
@@ -34,7 +37,7 @@ namespace LexiFinal
         //public string isID(
         public Tuple<bool,string> isOperator(string input)
         {
-            string[,] op_list = new string[,] { { "+", "Operator : Add" }, { "-", "Operator : Minus" }, {"=","assignment Operator" }, { "/", "Operator : Division" }, { "%", "Operator : Modulus" } };
+           
             bool flag = false;
             int pos = 0;
             for (int i = 0; i < op_list.GetLength(0); i++)
@@ -50,17 +53,17 @@ namespace LexiFinal
 
             }
 
-            return flag ? Tuple.Create(true,string.Format("< " + " {0}  {1}  , {2}  > ",op_list[pos,1], op_cntr, input)) :Tuple.Create(false,"");
+            return flag ? Tuple.Create(true,string.Format("{0} {1},{2}",op_list[pos,1], op_cntr, input)) :Tuple.Create(false,"");
 
         }
         public Tuple<bool,string> isPunc(string input)
         {
-            string[,] op_list = new string[,] { { "(", "Open Small Parenthesis" }, { ")", "Closed Small Parenthesis" }, { "{", "Open Curly Braces" }, { "}", "Closed Curly Braces" }, { ";", "Delimeter" },{",","comma"} };
+            
             bool flag = false;
             int pos = 0;
-            for (int i = 0; i < op_list.GetLength(0); i++)
+            for (int i = 0; i < puncOp_list.GetLength(0); i++)
             {
-                if (input == op_list[i, 0])
+                if (input == puncOp_list[i, 0])
                 {
                     flag = true;
                     punc_cntr++;
@@ -70,7 +73,7 @@ namespace LexiFinal
 
             }
 
-            return flag ? Tuple.Create(true,string.Format("< " + " Punc. Operator {0}  {1} , {2}  > ",op_list[pos,1], punc_cntr, input)): Tuple.Create(false,"");
+            return flag ? Tuple.Create(true,string.Format(" Punc. Operator {0}  {1},{2}",puncOp_list[pos,1], punc_cntr, input)): Tuple.Create(false,"");
 
         }
 
@@ -91,14 +94,14 @@ namespace LexiFinal
                 if (c==1)
                 {
                     arr = input.Split('.');
-                    return isDigit(arr[0]) && isDigit(arr[1]) ?Tuple.Create(true,string.Format("< " + " Value {0}  , {1}  > ", value_cntr++, input)) : Tuple.Create(false,"");
+                    return isDigit(arr[0]) && isDigit(arr[1]) ?Tuple.Create(true,string.Format(" Value {0},{1}", value_cntr++, input)) : Tuple.Create(false,"");
 
                 }
                 
 
             }
             
-            return isDigit(input) ? Tuple.Create(true,string.Format("< " + " Value {0}  , {1}  > ", value_cntr++, input)) :Tuple.Create(false,"");
+            return isDigit(input) ? Tuple.Create(true,string.Format(" Value{0},{1}", value_cntr++, input)) :Tuple.Create(false,"");
 
         }
 
@@ -106,7 +109,7 @@ namespace LexiFinal
         {
             if (((input.Length==5) && (input.StartsWith("float"))) || ((input.Length==6) && ((input.StartsWith("double")) || input.StartsWith("string"))) || ((input.Length == 3) && (input.StartsWith("int"))))
             {
-                return Tuple.Create(true, string.Format("<  DataType , {0}   >", input));
+                return Tuple.Create(true, string.Format("DataType,{0}", input));
             }
             return Tuple.Create(false, "");
 
